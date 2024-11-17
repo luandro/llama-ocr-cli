@@ -1,0 +1,32 @@
+{
+  "name": "llama-ocr-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for OCR using llama-ocr",
+  "main": "dist/index.js",
+  "bin": {
+    "llama-ocr": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "ocr",
+    "cli",
+    "llama",
+    "image-to-text"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "llama-ocr": "^0.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
